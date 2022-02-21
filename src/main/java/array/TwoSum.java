@@ -1,4 +1,4 @@
-package myTests;
+package array;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -17,11 +17,11 @@ import java.util.Map;
  * Space Complexity: O(n)
  * Where n is the number of elements in the array
  *
- * @see myTests /ArrayTests#TwoSumTest
+ * @see ArrayTests#validTwoSum()
  */
 
 public class TwoSum {
-    public int[] getTwoSum(int[] nums, int target) {
+    public int[] twoSum(int[] nums, int target) {
         // Create new hashmap to store complements and indexes
         Map<Integer, Integer> num_map = new HashMap<>();
 
