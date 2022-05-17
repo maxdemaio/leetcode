@@ -14,6 +14,10 @@ public class ArrayTests {
 
     @Test
     void validRemoveDuplicatesFromSortedArray() {
-        return;
+        // Given
+        int actual = new RemoveDuplicatesFromSortedArray().removeDuplicates(new int[] {0,0,1,1,1,2,2,3,3,4});
+
+        // Then
+        assertEquals(5, actual);
     }
 }

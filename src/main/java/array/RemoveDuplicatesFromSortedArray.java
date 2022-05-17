@@ -11,10 +11,29 @@ package array;
  * Approach: X
  *
  * Time Complexity: X
- * Space Complexity: X
+ * Space Complexity: O(1)
  *
  * @see ArrayTests#validRemoveDuplicatesFromSortedArray()
  */
 
 public class RemoveDuplicatesFromSortedArray {
+    public int removeDuplicates(int[] nums) {
+        if (nums.length == 0) {
+            return 0;
+        }
+
+        int pa = 0;
+        int pb = 0;
+
+        while (pa < nums.length) {
+            // Unique found
+            if (nums[pa] != nums[pb]) {
+                nums[pb + 1] = nums[pa];
+                pb++;
+            }
+            pa++;
+        }
+
+        return pb + 1;
+    }
 }
