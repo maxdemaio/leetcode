@@ -11,4 +11,9 @@ public class ArrayTests {
         assertArrayEquals(new int[] { 0, 1 }, new TwoSum().twoSum(new int[] { -1, 1 }, 0));
         assertArrayEquals(new int[] { 0, 1 }, new TwoSum().twoSum(new int[] { 2, -7 }, -5));
     }
+
+    @Test
+    void validRemoveDuplicatesFromSortedArray() {
+        return;
+    }
 }
