@@ -2,15 +2,16 @@ package array;
 
 /**
  * @author Max DeMaio
- * Solved on XX/XX/XXXX
+ * Solved on 05/17/2022
  *
  * Remove Duplicates from Sorted Array
  * https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/727/
  * Difficulty: Easy
  *
- * Approach: X
+ * Approach: once an element is encountered, we bypass its duplicates
+ * and move on to the next unique element.
  *
- * Time Complexity: X
+ * Time Complexity: O(n)
  * Space Complexity: O(1)
  *
  * @see ArrayTests#validRemoveDuplicatesFromSortedArray()
