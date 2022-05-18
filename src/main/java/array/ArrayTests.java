@@ -27,4 +27,23 @@ public class ArrayTests {
         assertEquals(new BestTimeToBuyAndSellStockIi().maxProfit(new int[] {1,2,3,4,5}), 4);
         assertEquals(new BestTimeToBuyAndSellStockIi().maxProfit(new int[] {7,1,5,3,6,4}), 7);
     }
+
+    @Test
+    void validRotateArray() {
+        // mem version
+        int[] actual = new RotateArray().rotateWithMem(new int[] { 1, 2, 3, 4, 5, 6, 7 }, 3);
+        int[] expected = new int[] { 5, 6, 7, 1, 2, 3, 4 };
+        assertArrayEquals(expected, actual);
+
+        // O(1) version
+        actual = new int[] { -1, -100, 3, 99 };
+        new RotateArray().rotate(actual, 2);
+        expected = new int[] { 3, 99, -1, -100 };
+        assertArrayEquals(expected, actual);
+
+        actual = new int[] { -1, -100, 3, 99 };
+        new RotateArray().rotate(actual, 5);
+        expected = new int[] { 99, -1, -100, 3 };
+        assertArrayEquals(expected, actual);
+    }
 }
