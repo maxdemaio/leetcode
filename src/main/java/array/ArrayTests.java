@@ -46,4 +46,10 @@ public class ArrayTests {
         expected = new int[] { 99, -1, -100, 3 };
         assertArrayEquals(expected, actual);
     }
+
+    @Test
+    void validContainsDuplicate() {
+        assertEquals(new ContainsDuplicate().containsDuplicate(new int[] {1,2,3,1}), true);
+        assertEquals(new ContainsDuplicate().containsDuplicate(new int[] {1,2,3,4}), false);
+    }
 }
