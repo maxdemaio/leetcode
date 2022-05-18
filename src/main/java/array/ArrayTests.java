@@ -52,4 +52,11 @@ public class ArrayTests {
         assertEquals(new ContainsDuplicate().containsDuplicate(new int[] {1,2,3,1}), true);
         assertEquals(new ContainsDuplicate().containsDuplicate(new int[] {1,2,3,4}), false);
     }
+
+    @Test
+    void validSingleNumber() {
+        assertEquals(new SingleNumber().singleNumber(new int[] {2,2,1}), 1);
+        assertEquals(new SingleNumber().singleNumberMem(new int[] {4,1,2,1,2}), 4);
+
+    }
 }
