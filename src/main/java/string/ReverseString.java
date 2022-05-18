@@ -2,7 +2,7 @@ package string;
 
 /**
  * @author Max DeMaio
- * Solved on XX/XX/XXXX
+ * Solved on 05/18/2022
  *
  * Reverse String
  * https://leetcode.com/problems/reverse-string/
@@ -14,7 +14,6 @@ package string;
  * Time Complexity: O(n)
  * Space Complexity: O(1)
  *
- * @see StringTests#validReverseString()
  */
 
 public class ReverseString {

@@ -19,7 +19,6 @@ package array;
  * Time Complexity: X
  * Space Complexity: X
  *
- * @see ArrayTests#validRotateArray()
  */
 
 public class RotateArray {

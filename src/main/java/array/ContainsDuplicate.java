@@ -17,7 +17,6 @@ import java.util.Set;
  * Time Complexity: O(n)
  * Space Complexity: O(n)
  *
- * @see ArrayTests#validContainsDuplicate()
  */
 
 public class ContainsDuplicate {

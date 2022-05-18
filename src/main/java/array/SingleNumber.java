@@ -20,7 +20,6 @@ import java.util.Set;
  * Time Complexity: O(n)
  * Space Complexity: O(1) with the data structure it's O(n)
  *
- * @see ArrayTests#validSingleNumber()
  */
 
 public class SingleNumber {

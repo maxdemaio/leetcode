@@ -14,7 +14,6 @@ package array;
  * Time Complexity: O(n)
  * Space Complexity: O(1)
  *
- * @see ArrayTests#validRemoveDuplicatesFromSortedArray()
  */
 
 public class RemoveDuplicatesFromSortedArray {

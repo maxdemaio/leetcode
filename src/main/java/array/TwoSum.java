@@ -17,7 +17,6 @@ import java.util.Map;
  * Space Complexity: O(n)
  * Where n is the number of elements in the array
  *
- * @see ArrayTests#validTwoSum()
  */
 
 public class TwoSum {
