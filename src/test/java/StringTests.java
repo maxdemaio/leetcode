@@ -1,6 +1,7 @@
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
+import string.ReverseInteger;
 import string.ReverseString;
 
 public class StringTests {
@@ -23,5 +24,12 @@ public class StringTests {
         input = new char[0];
         tester.reverseString(input);
         assertArrayEquals(new char[0], input);
+    }
+
+    @Test
+    void validReverseInteger() {
+        assertEquals(321, new ReverseInteger().reverse(123));
+        assertEquals(-123, new ReverseInteger().reverse(-321));
+        assertEquals(21, new ReverseInteger().reverse(120));
     }
 }
