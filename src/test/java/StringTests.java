@@ -1,10 +1,7 @@
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
-import string.FirstUniqueCharacterInAString;
-import string.ReverseInteger;
-import string.ReverseString;
-import string.ValidAnagram;
+import string.*;
 
 public class StringTests {
 
@@ -44,5 +41,15 @@ public class StringTests {
     void validAnagram() {
         assertFalse(new ValidAnagram().isAnagram("rat", "car"));
         assertTrue(new ValidAnagram().isAnagram("anagram", "nagaram"));
+    }
+
+    @Test
+    void testValidPalindrome() {
+        // Test for ValidPalindrome
+        assertTrue(new ValidPalindrome().isPalindrome("A man, a plan, a canal: Panama"));
+        assertFalse(new ValidPalindrome().isPalindrome("race a car"));
+        assertFalse(new ValidPalindrome().isPalindrome("0P"));
+        assertTrue(new ValidPalindrome().isPalindrome("ab@a"));
+        assertTrue(new ValidPalindrome().isPalindrome(".,"));
     }
 }
