@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 import string.FirstUniqueCharacterInAString;
 import string.ReverseInteger;
 import string.ReverseString;
+import string.ValidAnagram;
 
 public class StringTests {
 
@@ -37,5 +38,11 @@ public class StringTests {
     @Test
     void validFirstUniqueCharacterInAString() {
         assertEquals(0, new FirstUniqueCharacterInAString().firstUniqChar("leetcode"));
+    }
+
+    @Test
+    void validAnagram() {
+        assertFalse(new ValidAnagram().isAnagram("rat", "car"));
+        assertTrue(new ValidAnagram().isAnagram("anagram", "nagaram"));
     }
 }
