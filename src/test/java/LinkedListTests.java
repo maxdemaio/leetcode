@@ -4,6 +4,7 @@ import linkedList.ListNode;
 import static org.junit.jupiter.api.Assertions.*;
 
 import linkedList.RemoveNthNodeFromEndOfList;
+import linkedList.RemoveNthNodeFromStartOfList;
 import org.junit.jupiter.api.Test;
 
 public class LinkedListTests {
@@ -49,7 +50,7 @@ public class LinkedListTests {
     }
 
     @Test
-    void testRemoveNthNodeFromEndofList() {
+    void testRemoveNthNodeFromEndOfList() {
         ListNode head = setupHead12345();
         assertEquals("[1,2,3,5]", new RemoveNthNodeFromEndOfList().removeNthFromEnd2pass(head, 2).toString());
 
@@ -61,5 +62,20 @@ public class LinkedListTests {
 
         head = setupHead(new int[] { 1 });
         assertEquals(null, new RemoveNthNodeFromEndOfList().removeNthFromEnd(head, 1));
+    }
+
+    @Test
+    void testRemoveNthNodeFromStartOfList() {
+        ListNode head = setupHead12345();
+        assertEquals("[1,3,4,5]", new RemoveNthNodeFromStartOfList().removeNthFromStart(head, 2).toString());
+
+        head = setupHead12345();
+        assertEquals("[2,3,4,5]", new RemoveNthNodeFromStartOfList().removeNthFromStart(head, 1).toString());
+
+        head = setupHead12345();
+        assertEquals("[1,2,3,4]", new RemoveNthNodeFromStartOfList().removeNthFromStart(head, 5).toString());
+
+        head = setupHead(new int[] { 1 });
+        assertEquals(null, new RemoveNthNodeFromStartOfList().removeNthFromStart(head, 1));
     }
 }
