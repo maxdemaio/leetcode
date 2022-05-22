@@ -52,4 +52,12 @@ public class StringTests {
         assertTrue(new ValidPalindrome().isPalindrome("ab@a"));
         assertTrue(new ValidPalindrome().isPalindrome(".,"));
     }
+
+    @Test
+    void validStringToInteger() {
+        assertEquals(42, new StringToInteger().myAtoi("42"));
+        assertEquals(-42, new StringToInteger().myAtoi("   -42"));
+        assertEquals(32, new StringToInteger().myAtoi("0032"));
+        assertEquals(4193, new StringToInteger().myAtoi("4193 with words"));
+    }
 }
