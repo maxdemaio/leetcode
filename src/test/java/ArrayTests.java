@@ -57,6 +57,12 @@ public class ArrayTests {
     void validSingleNumber() {
         assertEquals(new SingleNumber().singleNumber(new int[] {2,2,1}), 1);
         assertEquals(new SingleNumber().singleNumberMem(new int[] {4,1,2,1,2}), 4);
+    }
 
+    @Test
+    void testIntersectionOfTwoArraysII() {
+        assertArrayEquals(new int[]{2, 2}, new IntersectionOfTwoArraysIi().intersect(new int[]{1, 2, 2, 1}, new int[]{2, 2}));
+        assertArrayEquals(new int[]{4, 9}, new IntersectionOfTwoArraysIi().intersect(new int[]{4, 9, 5}, new int[]{9, 4, 9, 8, 4}));
+        assertArrayEquals(new int[]{1, 2}, new IntersectionOfTwoArraysIi().intersect(new int[]{2, 1}, new int[]{1, 2}));
     }
 }
