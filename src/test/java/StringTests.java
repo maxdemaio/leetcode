@@ -60,4 +60,10 @@ public class StringTests {
         assertEquals(32, new StringToInteger().myAtoi("0032"));
         assertEquals(4193, new StringToInteger().myAtoi("4193 with words"));
     }
+
+    @Test
+    void validImplStrStr() {
+        assertEquals(4, new ImplStrStr().strStr("mississippi", "issip"));
+        assertEquals(2, new ImplStrStr().strStr("hello", "ll"));
+    }
 }
