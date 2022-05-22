@@ -1,10 +1,7 @@
-import linkedList.DeleteNodeInLinkedList;
-import linkedList.ListNode;
+import linkedList.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import linkedList.RemoveNthNodeFromEndOfList;
-import linkedList.RemoveNthNodeFromStartOfList;
 import org.junit.jupiter.api.Test;
 
 public class LinkedListTests {
@@ -78,4 +75,12 @@ public class LinkedListTests {
         head = setupHead(new int[] { 1 });
         assertEquals(null, new RemoveNthNodeFromStartOfList().removeNthFromStart(head, 1));
     }
+
+    @Test
+    void testReverseLinkedList() {
+        // Test for ReverseLinkedList
+        ListNode head = setupHead12345();
+        assertEquals("[5,4,3,2,1]", new ReverseLinkedList().reverseList(head).toString());
+    }
+
 }
