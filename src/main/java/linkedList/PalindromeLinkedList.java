@@ -6,18 +6,18 @@ import java.util.List;
 /**
  * @author Max DeMaio
  * Solved on 06/02/2022
- * <p>
+ *
  * Palindrome Linked List
  * https://leetcode.com/explore/interview/card/top-interview-questions-easy/93/linked-list/772/
- * Difficulty: X
- * <p>
+ * Difficulty: Easy
+ *
  * Approach: We can use a fast and slow pointer to get the center of the list,
  * then reverse the second list and compare two sublists. The time is O(n) and space is O(1).
- * <p>
+ *
  * This is similar to deleting Nth node from end of list
- * <p>
- * Time Complexity: X
- * Space Complexity: X
+ *
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
  */
 
 // We can create a new list in reversed order and then compare each node. The time and space are O(n) too
