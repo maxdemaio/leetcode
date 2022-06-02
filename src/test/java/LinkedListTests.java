@@ -94,4 +94,26 @@ public class LinkedListTests {
         assertEquals("[0]", new MergeTwoSortedLists().mergeTwoLists(head3, head4).toString());
     }
 
+    @Test
+    void palindromeLinkedList() {
+        ListNode head = setupHead(new int[]{1,2,3,4,5,6});
+        assertFalse(new PalindromeLinkedList().isPalindrome(head));
+
+        ListNode head2 = setupHead(new int[]{1,2,2,1});
+        assertTrue(new PalindromeLinkedList().isPalindrome(head2));
+
+        ListNode head3 = setupHead(new int[]{1,2,3,2,1});
+        assertTrue(new PalindromeLinkedList().isPalindrome(head3));
+
+        ListNode head4 = setupHead(new int[]{1,2,3,4,5,6});
+        assertFalse(new PalindromeLinkedList().isPalindromeWithList(head4));
+
+        ListNode head5 = setupHead(new int[]{1,2,2,1});
+        assertTrue(new PalindromeLinkedList().isPalindromeWithList(head5));
+
+        ListNode head6 = setupHead(new int[]{1,2,3,2,1});
+        assertTrue(new PalindromeLinkedList().isPalindromeWithList(head6));
+
+    }
+
 }
