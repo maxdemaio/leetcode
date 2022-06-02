@@ -83,4 +83,15 @@ public class LinkedListTests {
         assertEquals("[5,4,3,2,1]", new ReverseLinkedList().reverseList(head).toString());
     }
 
+    @Test
+    void mergeTwoSortedLists() {
+        ListNode head = setupHead(new int[]{1,2,4});
+        ListNode head2 = setupHead(new int[]{1,3,4});
+        assertEquals("[1,1,2,3,4,4]", new MergeTwoSortedLists().mergeTwoLists(head, head2).toString());
+
+        ListNode head3 = setupHead(new int[]{});
+        ListNode head4 = setupHead(new int[]{0});
+        assertEquals("[0]", new MergeTwoSortedLists().mergeTwoLists(head3, head4).toString());
+    }
+
 }
