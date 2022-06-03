@@ -1,13 +1,13 @@
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
-import tree.MaximumDepthOfBinaryTree;
-import tree.TreeNode;
+import treesAndGraphs.MaximumDepthOfBinaryTree;
+import treesAndGraphs.TreeNode;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class TreeTests {
+public class TreesAndGraphsTests {
 
     TreeNode setupTree(Integer... array) {
         if (array.length == 0) {

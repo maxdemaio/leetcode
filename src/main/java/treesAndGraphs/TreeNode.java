@@ -1,4 +1,4 @@
-package tree;
+package treesAndGraphs;
 
 import java.util.LinkedList;
 import java.util.Queue;
