@@ -3,6 +3,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 import treesAndGraphs.MaximumDepthOfBinaryTree;
 import treesAndGraphs.TreeNode;
+import treesAndGraphs.ValidateBinarySearchTree;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -54,6 +55,15 @@ public class TreesAndGraphsTests {
 
         root = setupTree(5);
         assertEquals(1, new MaximumDepthOfBinaryTree().maxDepth(root));
+    }
+
+    @Test
+    void testValidBinarySearchTree() {
+        TreeNode root = setupTree(5,1,4,null,null,3,6);
+        assertFalse(new ValidateBinarySearchTree().isValidBST(root));
+
+        TreeNode root2 = setupTree(2, 1, 3);
+        assertTrue(new ValidateBinarySearchTree().isValidBST(root2));
     }
 
 }
