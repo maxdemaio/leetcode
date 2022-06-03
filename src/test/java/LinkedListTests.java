@@ -27,8 +27,22 @@ public class LinkedListTests {
         return head;
     }
 
-    ListNode setupHead12345() {
-        return setupHead(new int[] { 1, 2, 3, 4, 5 });
+    ListNode setupHead() {
+        return setupHead(new int[]{1, 2, 3, 4, 5});
+    }
+
+    ListNode setupCycle() {
+        ListNode cycle = new ListNode(1);
+        ListNode curr = cycle;
+
+        for (int i = 1; i < 5; i++) {
+            ListNode newNode = new ListNode(i + 1);
+            curr.next = newNode;
+            curr = newNode;
+        }
+
+        curr.next = cycle;
+        return cycle;
     }
 
     @Test
@@ -48,45 +62,45 @@ public class LinkedListTests {
 
     @Test
     void testRemoveNthNodeFromEndOfList() {
-        ListNode head = setupHead12345();
+        ListNode head = setupHead();
         assertEquals("[1,2,3,5]", new RemoveNthNodeFromEndOfList().removeNthFromEnd2pass(head, 2).toString());
 
-        head = setupHead12345();
+        head = setupHead();
         assertEquals("[1,2,3,4]", new RemoveNthNodeFromEndOfList().removeNthFromEnd(head, 1).toString());
 
-        head = setupHead12345();
+        head = setupHead();
         assertEquals("[2,3,4,5]", new RemoveNthNodeFromEndOfList().removeNthFromEnd(head, 5).toString());
 
-        head = setupHead(new int[] { 1 });
+        head = setupHead(new int[]{1});
         assertEquals(null, new RemoveNthNodeFromEndOfList().removeNthFromEnd(head, 1));
     }
 
     @Test
     void testRemoveNthNodeFromStartOfList() {
-        ListNode head = setupHead12345();
+        ListNode head = setupHead();
         assertEquals("[1,3,4,5]", new RemoveNthNodeFromStartOfList().removeNthFromStart(head, 2).toString());
 
-        head = setupHead12345();
+        head = setupHead();
         assertEquals("[2,3,4,5]", new RemoveNthNodeFromStartOfList().removeNthFromStart(head, 1).toString());
 
-        head = setupHead12345();
+        head = setupHead();
         assertEquals("[1,2,3,4]", new RemoveNthNodeFromStartOfList().removeNthFromStart(head, 5).toString());
 
-        head = setupHead(new int[] { 1 });
+        head = setupHead(new int[]{1});
         assertEquals(null, new RemoveNthNodeFromStartOfList().removeNthFromStart(head, 1));
     }
 
     @Test
     void testReverseLinkedList() {
         // Test for ReverseLinkedList
-        ListNode head = setupHead12345();
+        ListNode head = setupHead();
         assertEquals("[5,4,3,2,1]", new ReverseLinkedList().reverseList(head).toString());
     }
 
     @Test
-    void mergeTwoSortedLists() {
-        ListNode head = setupHead(new int[]{1,2,4});
-        ListNode head2 = setupHead(new int[]{1,3,4});
+    void testMergeTwoSortedLists() {
+        ListNode head = setupHead(new int[]{1, 2, 4});
+        ListNode head2 = setupHead(new int[]{1, 3, 4});
         assertEquals("[1,1,2,3,4,4]", new MergeTwoSortedLists().mergeTwoLists(head, head2).toString());
 
         ListNode head3 = setupHead(new int[]{});
@@ -96,24 +110,32 @@ public class LinkedListTests {
 
     @Test
     void palindromeLinkedList() {
-        ListNode head = setupHead(new int[]{1,2,3,4,5,6});
+        ListNode head = setupHead(new int[]{1, 2, 3, 4, 5, 6});
         assertFalse(new PalindromeLinkedList().isPalindrome(head));
 
-        ListNode head2 = setupHead(new int[]{1,2,2,1});
+        ListNode head2 = setupHead(new int[]{1, 2, 2, 1});
         assertTrue(new PalindromeLinkedList().isPalindrome(head2));
 
-        ListNode head3 = setupHead(new int[]{1,2,3,2,1});
+        ListNode head3 = setupHead(new int[]{1, 2, 3, 2, 1});
         assertTrue(new PalindromeLinkedList().isPalindrome(head3));
 
-        ListNode head4 = setupHead(new int[]{1,2,3,4,5,6});
+        ListNode head4 = setupHead(new int[]{1, 2, 3, 4, 5, 6});
         assertFalse(new PalindromeLinkedList().isPalindromeWithList(head4));
 
-        ListNode head5 = setupHead(new int[]{1,2,2,1});
+        ListNode head5 = setupHead(new int[]{1, 2, 2, 1});
         assertTrue(new PalindromeLinkedList().isPalindromeWithList(head5));
 
-        ListNode head6 = setupHead(new int[]{1,2,3,2,1});
+        ListNode head6 = setupHead(new int[]{1, 2, 3, 2, 1});
         assertTrue(new PalindromeLinkedList().isPalindromeWithList(head6));
 
     }
 
+    @Test
+    void testLinkedListCycle() {
+        // Test for LinkedListCycle
+        ListNode head = setupHead();
+        ListNode cycle = setupCycle();
+        assertFalse(new LinkedListCycle().hasCycle(head));
+        assertTrue(new LinkedListCycle().hasCycle(cycle));
+    }
 }
