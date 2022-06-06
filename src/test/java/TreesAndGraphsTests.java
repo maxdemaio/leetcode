@@ -1,12 +1,12 @@
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
+import treesAndGraphs.BinaryTreeLevelOrderTraversal;
 import treesAndGraphs.MaximumDepthOfBinaryTree;
 import treesAndGraphs.TreeNode;
 import treesAndGraphs.ValidateBinarySearchTree;
 
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 
 public class TreesAndGraphsTests {
 
@@ -64,6 +64,16 @@ public class TreesAndGraphsTests {
 
         TreeNode root2 = setupTree(2, 1, 3);
         assertTrue(new ValidateBinarySearchTree().isValidBST(root2));
+    }
+
+    @Test
+    void testBinaryTreeLevelOrderTraversal() {
+        TreeNode root = setupTree(3,9,20,null,null,15,7);
+        List<List<Integer>> list = new ArrayList<List<Integer>>();
+        list.add(Arrays.asList(3));
+        list.add(Arrays.asList(9, 20));
+        list.add(Arrays.asList(15, 7));
+        assertEquals(list, new BinaryTreeLevelOrderTraversal().levelOrder(root));
     }
 
 }
