@@ -1,0 +1,21 @@
+Python script to just make classNames:
+myStr = ""
+newStr = myStr.replace(" ", "")
+print("test" + newStr)
+
+---
+
+/**
+ * @author Max DeMaio
+ * Solved on XX/XX/XXXX
+ *
+ * Title
+ * https://LINK
+ * Difficulty: X
+ *
+ * Approach: X
+ *
+ * Time Complexity: X
+ * Space Complexity: X
+ *
+ */
