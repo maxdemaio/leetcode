@@ -7,16 +7,22 @@ import java.util.Queue;
 
 /**
  * @author Max DeMaio
- * Solved on XX/XX/XXXX
- * <p>
- * Title
- * https://LINK
- * Difficulty: X
- * <p>
- * Approach: X
- * <p>
- * Time Complexity: X
- * Space Complexity: X
+ * Solved on 06/05/2022
+ *
+ * Binary Tree Level Order Traversal
+ * https://leetcode.com/explore/interview/card/top-interview-questions-easy/94/trees/628/
+ * Difficulty: Medium
+ *
+ * Approach: BFS
+ * basically we use a queue
+ * start with root node [[root]...]
+ * if there's a left or right (another level), we add it to the queue to be processed
+ * we add those values to a list and once the level is done we add that list to our
+ * list of integer lists
+ *
+ *
+ * Time Complexity: O(n) traverse all nodes
+ * Space Complexity: O(n) we need a queue structure for all nodes
  */
 
 /*
