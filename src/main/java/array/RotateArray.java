@@ -8,7 +8,9 @@ package array;
  * https://leetcode.com/problems/rotate-array/
  * Difficulty: Easy
  *
- * Approach: Reverse whole list, reverse first K numbers,
+ * Approach:
+ * Reverse whole list,
+ * reverse first K numbers,
  * reverse last n-k numbers
  * ex) where k = 3 and n = 7
  * 1 2 3 4 5 6 7
@@ -16,8 +18,8 @@ package array;
  * 5 6 7 4 3 2 1
  * 5 6 7 1 2 3 4
  *
- * Time Complexity: X
- * Space Complexity: X
+ * Time Complexity: O(n)
+ * Space Complexity: O(1) for no-memory version
  *
  */
 
