@@ -13,7 +13,7 @@ public class SymmetricTree {
             return false;
         }
 
-        return isMirror(leftSubTree.left, rightSubtree.right);
+        return isMirror(leftSubTree.left, rightSubtree.right) && isMirror(leftSubTree.right, rightSubtree.left);
     }
 
     public boolean isSymmetric(TreeNode root) {
