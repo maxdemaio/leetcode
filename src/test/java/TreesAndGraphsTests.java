@@ -1,10 +1,7 @@
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
-import treesAndGraphs.BinaryTreeLevelOrderTraversal;
-import treesAndGraphs.MaximumDepthOfBinaryTree;
-import treesAndGraphs.TreeNode;
-import treesAndGraphs.ValidateBinarySearchTree;
+import treesAndGraphs.*;
 
 import java.util.*;
 
@@ -15,7 +12,8 @@ public class TreesAndGraphsTests {
             return null;
         }
 
-        Queue<TreeNode> queue = new LinkedList<TreeNode>();
+        Queue<TreeNode> queue = new LinkedList<>();
+        // create root node and add to tree data structure
         TreeNode root = new TreeNode(array[0]);
         queue.offer(root);
         boolean left = true;
@@ -76,4 +74,9 @@ public class TreesAndGraphsTests {
         assertEquals(list, new BinaryTreeLevelOrderTraversal().levelOrder(root));
     }
 
+    @Test
+    void testValidSymmetricalTree() {
+        TreeNode root = setupTree(1,2,2,3,4,4,3);
+        assertTrue(new SymmetricTree().isSymmetric(root));
+    }
 }
