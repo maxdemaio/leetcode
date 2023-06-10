@@ -22,7 +22,22 @@ import java.util.Map;
 
 public class ValidAnagram {
     public boolean isAnagram(String s, String t) {
+        if (s.length() != t.length()) {
+            return false;
+        }
 
+        int[] charCounts = new int[26];
+        for (int i = 0; i < s.length(); i++) {
+            charCounts[s.charAt(i) - 'a'] += 1;
+            charCounts[t.charAt(i) - 'a'] -= 1;
+        }
+
+// If sum is 0, return true
+        for (int count: charCounts) {
+            if (count != 0) {
+                return false;
+            }
+        }
         return true;
     }
 }

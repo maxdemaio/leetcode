@@ -1,8 +1,5 @@
 package linkedList;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * @author Max DeMaio
  * Solved on 06/01/2022
