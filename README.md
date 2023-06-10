@@ -1,3 +1,3 @@
-# code-dojo-java
+# leetcode
 
 :octocat:
