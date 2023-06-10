@@ -21,14 +21,13 @@ import java.util.Set;
 
 public class ContainsDuplicate {
     public boolean containsDuplicate(int[] nums) {
-        Set<Integer> mySet = new HashSet();
-        for (int i = 0; i < nums.length; i++) {
-            if (mySet.contains(nums[i])) {
+        Set<Integer> myHashSet = new HashSet<>();
+        for (int num: nums) {
+            if (myHashSet.contains(num)) {
                 return true;
             }
-            mySet.add(nums[i]);
+            myHashSet.add(num);
         }
-
         return false;
     }
 }
