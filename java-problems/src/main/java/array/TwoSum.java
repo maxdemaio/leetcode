@@ -4,14 +4,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author Max DeMaio
- * Solved on 08/13/2021 and 02/22/2022
- *
- * Two Sum
- * https://leetcode.com/problems/two-sum/
- * Difficulty: Easy
- *
  * Approach: Hash Map
+ * we store the complement as the key and the index as the value
+ * as we loop across each number, if the complement exists that sums it to the target
+ * return the {i, myMap.get(nums[i])}
+ * so this would be the curr nums index and then the complement's index
  *
  * Time Complexity: O(n)
  * Space Complexity: O(n)
@@ -21,20 +18,20 @@ import java.util.Map;
 
 public class TwoSum {
     public int[] twoSum(int[] nums, int target) {
-        // Create new hashmap to store complements and indexes
-        Map<Integer, Integer> num_map = new HashMap<>();
+        // What are the indices of two nums that add to the target?
 
-        // Loop until we find a match of number/complement
+        // {complement: index}
+        Map<Integer, Integer> myMap = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
-            if (num_map.containsKey(nums[i])) {
-                return new int[] {num_map.get(nums[i]), i};
+
+            if (myMap.containsKey(nums[i])) {
+                // complement found, we should return
+                return new int[] {i, myMap.get(nums[i])};
             }
-
-            // No match, store complement and index in HashMap
-            num_map.put(target - nums[i], i);
+            // no match found, store complement and index in hashmap
+            myMap.put(target - nums[i], i);
         }
-
-        // Error no match found
+        // nothing found
         return new int[] {};
     }
 }

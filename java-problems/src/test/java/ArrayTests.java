@@ -3,13 +3,15 @@ import static org.junit.jupiter.api.Assertions.*;
 import array.*;
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+
 public class ArrayTests {
     @Test
     void validTwoSum() {
-        assertArrayEquals(new int[] { 0, 1 }, new TwoSum().twoSum(new int[] { 2, 7, 11, 15 }, 9));
-        assertArrayEquals(new int[] { 0, 1 }, new TwoSum().twoSum(new int[] { 4, 7 }, 11));
-        assertArrayEquals(new int[] { 0, 1 }, new TwoSum().twoSum(new int[] { -1, 1 }, 0));
-        assertArrayEquals(new int[] { 0, 1 }, new TwoSum().twoSum(new int[] { 2, -7 }, -5));
+        assertEquals(1, Arrays.stream(new TwoSum().twoSum(new int[] { 2, 7, 11, 15 }, 9)).sum());
+        assertEquals(1, Arrays.stream(new TwoSum().twoSum(new int[] { 4, 7 }, 11)).sum());
+        assertEquals(1, Arrays.stream(new TwoSum().twoSum(new int[] { -1, 1 }, 0)).sum());
+        assertEquals(1, Arrays.stream(new TwoSum().twoSum(new int[] { 2, -7 }, -5)).sum());
     }
 
     @Test

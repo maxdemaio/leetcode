@@ -15,24 +15,26 @@ import java.util.Map;
  * increment for frequency of first string, decrement for other
  * sum of int array should be 0 if anagram
  *
- * Time Complexity: O(1) alpha fixed size of 26
- * Space Complexity: O(n)
+ * Time Complexity: O(n)
+ * Space Complexity: O(1) alpha fixed size of 26
  *
  */
 
 public class ValidAnagram {
     public boolean isAnagram(String s, String t) {
+        // if the length doesn't equal it's not an anagram
         if (s.length() != t.length()) {
             return false;
         }
 
-        int[] charCounts = new int[26];
+        // note: the strings we're given are all lowercase
+        int[] charCounts = new int[26]; // create new array of ints size of alphabet
         for (int i = 0; i < s.length(); i++) {
+            // take ascii value
             charCounts[s.charAt(i) - 'a'] += 1;
             charCounts[t.charAt(i) - 'a'] -= 1;
         }
 
-// If sum is 0, return true
         for (int count: charCounts) {
             if (count != 0) {
                 return false;
@@ -41,3 +43,9 @@ public class ValidAnagram {
         return true;
     }
 }
+
+
+
+
+
+
