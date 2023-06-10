@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.PriorityQueue;
 
-public class TopK {
+public class TopKFrequentElements {
     // get frequency counts in hashmap??
     // then just get the highest ones
     public int[] topKFrequent(int[] nums, int k) {
