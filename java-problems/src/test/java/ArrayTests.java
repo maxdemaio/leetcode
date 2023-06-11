@@ -25,9 +25,14 @@ public class ArrayTests {
 
     @Test
     void validBestTimeToBuyAndSellStockIi() {
-        assertEquals(new BestTimeToBuyAndSellStockIi().maxProfit(new int[] {7,6,4,3,1}), 0);
-        assertEquals(new BestTimeToBuyAndSellStockIi().maxProfit(new int[] {1,2,3,4,5}), 4);
-        assertEquals(new BestTimeToBuyAndSellStockIi().maxProfit(new int[] {7,1,5,3,6,4}), 7);
+        assertEquals(0, new BestTimeToBuyAndSellStockIi().maxProfit(new int[] {7,6,4,3,1}));
+        assertEquals(4, new BestTimeToBuyAndSellStockIi().maxProfit(new int[] {1,2,3,4,5}));
+        assertEquals(7, new BestTimeToBuyAndSellStockIi().maxProfit(new int[] {7,1,5,3,6,4}));
+    }
+
+    @Test
+    void validBestTimeToBuyAndSellStock() {
+        assertEquals(5, new BestTimeToBuyAndSellStock().maxProfit(new int[] {7,1,5,3,6,4}));
     }
 
     @Test
