@@ -24,6 +24,11 @@ public class ArrayTests {
     }
 
     @Test
+    void validProductExceptSelf() {
+        System.out.println(new ProductOfArrayExceptSelf().productExceptSelfBrute(new int[]{1,2,3,4}));
+    }
+
+    @Test
     void validBestTimeToBuyAndSellStockIi() {
         assertEquals(0, new BestTimeToBuyAndSellStockIi().maxProfit(new int[] {7,6,4,3,1}));
         assertEquals(4, new BestTimeToBuyAndSellStockIi().maxProfit(new int[] {1,2,3,4,5}));

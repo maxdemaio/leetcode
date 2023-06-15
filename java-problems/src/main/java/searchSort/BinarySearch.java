@@ -1,5 +1,15 @@
 package searchSort;
 
+/*
+Approach:
+Recursion
+
+Time complexity:
+
+Space complexity:
+
+Extra notes:
+ */
 
 public class BinarySearch {
     public int search(int[] nums, int target) {
@@ -7,7 +17,7 @@ public class BinarySearch {
     }
 
     private int binarySearch(int[] nums, int target, int left, int right) {
-        // base case where
+        // Case where target not found
         if (left > right) {
             return -1;
         }
