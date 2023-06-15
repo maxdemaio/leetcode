@@ -1,8 +1,8 @@
 # python-problems
 
-Keep in mind, I wrote all these in Python version `3.9.6`.
-
 :octocat:
+
+Keep in mind, I wrote all these in Python version `3.9.6`.
 
 ## Folder structure
 
@@ -30,4 +30,10 @@ python-problems/
 
 ## Running the tests
 
-`pytest` will recursively discover and run all the test files in the current directory and its subdirectories.
+If you have installed `pytest` locally within your project's venv or as a dependency in general, you can run the pytest command from the command line by specifying the Python interpreter along with the pytest module.
+
+```
+python3 -m pytest
+```
+
+This command will recursively discover and run all the test files in the current directory and its subdirectories.
