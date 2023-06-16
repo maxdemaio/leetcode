@@ -1,4 +1,3 @@
-Approach:
+Approach/Notes:
 Time complexity:
 Space complexity:
-Extra notes: 
