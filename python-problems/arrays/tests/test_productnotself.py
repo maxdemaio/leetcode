@@ -1,6 +1,4 @@
-import pytest
 from arrays.productnotself import Solution
-
 
 def test_productExceptSelf():
     solution = Solution()
