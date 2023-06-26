@@ -1,6 +1,7 @@
 from linkedlist.mergetwosortedlists import Solution
 from linkedlist.util import Util
 
+
 def test_mergeTwoLists():
     util = Util()
     solution = Solution()
@@ -24,4 +25,16 @@ def test_mergeTwoLists():
     assert util.linked_list_to_list(merged_linkedList) == [1, 2, 2, 4, 8, 9], "Linked lists not merged correctly"
 
 
+def test_mergeTwoSortedListsRecursive():
+    util = Util()
+    solution = Solution()
+
+    list5 = [1, 2, 4]
+    list6 = [1, 3, 4]
+    test_linkedlist5 = util.setup_linked_list(list5)
+    test_linkedlist6 = util.setup_linked_list(list6)
+
+    # Test case 3
+    merged_linkedList = solution.mergeTwoListsRecursive(test_linkedlist5, test_linkedlist6)
+    assert util.linked_list_to_list(merged_linkedList) == [1, 1, 2, 3, 4, 4], "Linked lists not merged correctly"
 
