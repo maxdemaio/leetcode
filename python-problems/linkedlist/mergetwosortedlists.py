@@ -4,9 +4,13 @@ from linkedlist.util import ListNode
 
 """
 Approach/Notes:
+Iterative:
 
+We create a dummy node to which we attach nodes from lists. 
+We iterate over lists using two-pointers (the list pointers themselves) and build up a resulting list 
+so that values are in ascending order.
 
-recursion:
+Recursive:
 ---
 4  
 ---
@@ -21,7 +25,9 @@ recursion:
 1  ->  1  ->  2  ->  3  ->  4  ->  4
 ---
 
-Time complexity: O(n)
+Time complexity: 
+O(n)
+
 Space complexity: 
 For the iterative approach O(1)
 
