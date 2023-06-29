@@ -28,13 +28,13 @@ return 2
 Time complexity:
 The right shift operation (n >>= 1) shifts all the bits of n to the right by one position,
 effectively removing the least significant bit.
-Since the number of bits in n is log n (in base 2),
-the right shift operation takes O(log n) time.
 
-Therefore, in the worst case,
-where the value of n has all bits set to 1,
-the while loop will iterate log n times,
-resulting in a time complexity of O(log n) for the entire function.
+For fixed sized ints, 32-bit unsigned for example it's O(1)
+because it takes a fixed number of iterations in worst case to shift all the 32 bits of n to the right.
+
+For variable-length integers or the number of bits in n can vary,
+the time complexity of the right shift operation would depend on the number of bits in n,
+which would be log (base 2) of  n. O(log(n))
 
 Space complexity: O(1)
 """
