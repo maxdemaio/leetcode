@@ -15,3 +15,22 @@ AND (lat, lon) IN (
   GROUP BY lat, lon
   HAVING COUNT(*) = 1
 )
+
+# Manpreet
+select round(sum(tiv_2016),2)  as tiv_2016
+from insurance
+where pid in (
+  # unique location pid
+  select pid
+  from insurance
+  where pid not in (
+    select distinct i1.pid
+    from insurance i1, insurance i2
+    where i1.lat = i2.lat and i1.lon = i2.lon and i1.pid != i2.pid
+  )
+  # and non unique tiv_2015
+  intersect
+  select i1.pid
+  from insurance i1, insurance i2
+  where i1.pid != i2.pid and i1.tiv_2015 = i2.tiv_2015
+)
