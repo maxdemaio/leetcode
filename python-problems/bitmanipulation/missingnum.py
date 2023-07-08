@@ -1,7 +1,30 @@
 from typing import *
 
 """
+Approach/Notes:
+Naive approach is sum - sum of nums which gives the missing num
 
+Formula approach is exactly the same but achieves the sum w/o looping
+
+Bitwise approach takes advantage of the communicative property of XOR
+When you XOR a number with itself, it equates to 0 since there are no differences
+At the end, you'll be left with the number that is unique in that list (adding a duplicate range to orig list)
+
+
+Time complexity:
+Formula approach is O(n) because we still have to sum the input list
+
+Naive approach simplifies to O(n) from O(2n)
+
+Bitwise approach is O(n)
+
+
+Space complexity:
+Formula approach is O(1)
+
+Naive approach is O(1)
+
+Bitwise approach is O(n) because we need to have the list + list which has 1 unique num
 """
 
 class Solution:

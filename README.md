@@ -21,3 +21,6 @@
 | 15 | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)                                                             | Easy | 6/27/2023          | [Python](https://github.com/maxdemaio/leetcode/blob/main/python-problems/bitmanipulation/num1bits.py)                                                                                                                            |
 | 16 | [Reverse Bits](https://leetcode.com/problems/reverse-bits/)                                                                     | Easy | 7/5/2023           | [Python](https://github.com/maxdemaio/leetcode/blob/main/python-problems/bitmanipulation/reversebits.py)                                                                                                                         |
 | 17 | [Missing Number](https://leetcode.com/problems/missing-number/)                                                                 | Easy | 7/6/2023           | [Python](https://github.com/maxdemaio/leetcode/blob/main/python-problems/bitmanipulation/missingnum.py)                                                                                                                          |
+
+TODO:
+add counting bits and lemonade
