@@ -25,3 +25,8 @@
 | 19 | [Lemonade Change](https://leetcode.com/problems/lemonade-change/) | Easy | 7/7/2023 | [Python](https://github.com/maxdemaio/leetcode/blob/main/python-problems/arrays/lemonadechange.py) |
 | 20 | [Investments in 2016](https://leetcode.com/problems/investments-in-2016/) | Medium | 7/7/2023 | [SQL](https://github.com/maxdemaio/leetcode/blob/main/sql-problems/investments-in-2016.sql) |
 | 21 | [Maximum Product of Two Elements](https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/) | Easy |  7/7/2023 | [Python](https://github.com/maxdemaio/leetcode/blob/main/python-problems/arrays/maxprod2elements.py) |
+| 22 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | Easy | 7/9/2023 | [Python](https://github.com/maxdemaio/leetcode/blob/main/python-problems/trees/maxdepthofbinarytree.py) |
+| 23 | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | Easy | 7/9/2023 | [Python](https://github.com/maxdemaio/leetcode/blob/main/python-problems/trees/invertbinarytree.py) |
+| 24 | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/) | Easy | 7/9/2023 | [Python](https://github.com/maxdemaio/leetcode/blob/main/python-problems/trees/diameterofbinarytree.py) |
+| 25 | [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | Medium | 7/9/2023 | [Python](https://github.com/maxdemaio/leetcode/blob/main/python-problems/bitmanipulation/reverseinteger.py) |
+| 26 | [Plus One](https://leetcode.com/problems/plus-one/) | Easy | 7/10/2023 | [Python](https://github.com/maxdemaio/leetcode/blob/main/python-problems/math/plusone.py) |
