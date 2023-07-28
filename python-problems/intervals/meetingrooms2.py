@@ -1,6 +1,21 @@
 from typing import *
 from intervals.util import Interval
 
+"""
+Approach/Notes:
+
+difference array algorithm
+
+Basically they are asking - 
+what is the maximum number of overlapping
+meetings at one time? Bc that would solve our problem
+
+Time complexity:
+O(n*log(n)) since it is the largest complexity to sort the intervals
+
+Space complexity:
+
+"""
 
 class Solution:
     """
@@ -12,16 +27,22 @@ class Solution:
         if len(intervals) == 0:
             return 0
 
-        rooms = 1
-        occ = 1
+        # Sort the array of meet times into start and end times O(n*log(n))
+        starts = sorted(x[0] for x in intervals)
+        ends = sorted(x[1] for x in intervals)
 
-        # Write your code here
-        intervals.sort(key=lambda x: x[0])
-
-        for i in range(1, len(intervals)):
-            if intervals[i][0] <= intervals[i - 1][1] and rooms == occ:
-                rooms = rooms + 1
-                occ = occ + 1
-                if occ > 0:
-                    occ = occ - 1
-        return rooms
+        max_rooms = 0
+        curr_count = 0
+        sp = 0
+        ep = 0
+        while sp < len(starts):
+            # a new meeting has started
+            if starts[sp] < ends[ep]:
+                curr_count += 1
+                max_rooms = max(max_rooms, curr_count)
+                sp += 1
+            # meeting has ended (also if start = end, we say those don't overlap)
+            else:
+                curr_count -= 1
+                ep += 1
+        return max_rooms
