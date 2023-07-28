@@ -30,3 +30,8 @@
 | 24 | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/) | Easy | 7/9/2023 | [Python](https://github.com/maxdemaio/leetcode/blob/main/python-problems/trees/diameterofbinarytree.py) |
 | 25 | [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | Medium | 7/9/2023 | [Python](https://github.com/maxdemaio/leetcode/blob/main/python-problems/bitmanipulation/reverseinteger.py) |
 | 26 | [Plus One](https://leetcode.com/problems/plus-one/) | Easy | 7/10/2023 | [Python](https://github.com/maxdemaio/leetcode/blob/main/python-problems/math/plusone.py) |
+| 27 | [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/) | Easy | 7/10/2023 | [Python](https://github.com/maxdemaio/leetcode/blob/main/python-problems/internals/meetingrooms.py) |
+
+## Todo
+
+- Meeting Rooms 2

@@ -11,7 +11,7 @@ We convert the int to binary, then to a string and count the 1s
 
 
 Time complexity:
-Optimal DP one is O(n)
+Optimal Dynamic Programming (DP) one is O(n)
 
 
 log(n) for the bin() function

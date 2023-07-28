@@ -2,3 +2,5 @@
 */target/
 .DS_Store
 .idea/
+python-problems/venv/
+python-problems/lib/
