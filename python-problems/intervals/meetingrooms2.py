@@ -10,10 +10,21 @@ Basically they are asking -
 what is the maximum number of overlapping
 meetings at one time? Bc that would solve our problem
 
+0) store a variable for max room count and curr room count
+1) Sort the start times in ascending order
+2) Sort the end times in ascending order
+3) Take 2 pointers
+  - while there are start times left,
+  - if curr start time > curr end time, 
+    - There's a new meeting so increase room count, move start time pointer
+  - else start time greater than or equal to an end time
+    - A meeting has ended so we can decrement the room count and then move the end time pointer
+
 Time complexity:
 O(n*log(n)) since it is the largest complexity to sort the intervals
 
 Space complexity:
+O(n) because we need to have a copy of the sorted elements
 
 """
 
