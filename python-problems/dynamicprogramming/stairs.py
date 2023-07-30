@@ -30,6 +30,8 @@ class Solution:
 
         # Memoized results of first 2 steps
         # (Results we know)
+        # From the third step, there were 2 ways to get to step 2
+        # There was only 1 way to get to step 1
         twoStepAway = 1
         oneStepAway = 2
 
