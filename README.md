@@ -31,8 +31,10 @@
 | 25 | [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | Medium | 7/9/2023 | [Python](https://github.com/maxdemaio/leetcode/blob/main/python-problems/bitmanipulation/reverseinteger.py) |
 | 26 | [Plus One](https://leetcode.com/problems/plus-one/) | Easy | 7/10/2023 | [Python](https://github.com/maxdemaio/leetcode/blob/main/python-problems/math/plusone.py) |
 | 27 | [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/) | Easy | 7/10/2023 | [Python](https://github.com/maxdemaio/leetcode/blob/main/python-problems/internals/meetingrooms.py) |
+| 28 | [Meeting Rooms II ](https://leetcode.com/problems/meeting-rooms-ii/) | Medium | 7/28/2023 | [Python](https://github.com/maxdemaio/leetcode/blob/main/python-problems/internals/meetingrooms2.py) |
+| 29 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | Easy | 7/27/2023 | [Python](https://github.com/maxdemaio/leetcode/blob/main/python-problems/dynamicprogramming/stairs.py) |
+| 30 | [Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/) | Easy | 7/29/2023 | [Python](https://github.com/maxdemaio/leetcode/blob/main/python-problems/dynamicprogramming/mincostclimbingstairs.py) |
 
 ## Todo
 
-- Meeting Rooms 2
 - Tree util / test cases (otherwise we have 100% coverage)
