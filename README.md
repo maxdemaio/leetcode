@@ -35,6 +35,8 @@
 | 29 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | Easy | 7/27/2023 | [Python](https://github.com/maxdemaio/leetcode/blob/main/python-problems/dynamicprogramming/stairs.py) |
 | 30 | [Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/) | Easy | 7/29/2023 | [Python](https://github.com/maxdemaio/leetcode/blob/main/python-problems/dynamicprogramming/mincostclimbingstairs.py) |
 | 31 | [House Robber](https://leetcode.com/problems/house-robber/) | Medium | 7/30/2023 | [Python](https://github.com/maxdemaio/leetcode/blob/main/python-problems/dynamicprogramming/houserobber.py) |
+| 32 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | Medium | 7/31/2023 | [Python](https://github.com/maxdemaio/leetcode/blob/main/python-problems/arrays/longestconsecutivesequence.py) |
+
 
 ## Todo
 
