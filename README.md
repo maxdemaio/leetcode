@@ -36,8 +36,8 @@
 | 30 | [Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/) | Easy | 7/29/2023 | [Python](https://github.com/maxdemaio/leetcode/blob/main/python-problems/dynamicprogramming/mincostclimbingstairs.py) |
 | 31 | [House Robber](https://leetcode.com/problems/house-robber/) | Medium | 7/30/2023 | [Python](https://github.com/maxdemaio/leetcode/blob/main/python-problems/dynamicprogramming/houserobber.py) |
 | 32 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | Medium | 7/31/2023 | [Python](https://github.com/maxdemaio/leetcode/blob/main/python-problems/arrays/longestconsecutivesequence.py) |
-
+| 33 | [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/) | Medium | 8/2/2023 | [Java](https://github.com/maxdemaio/leetcode/blob/main/java-problems/src/main/java/searchSort/BinarySearch.java) |
 
 ## Todo
 
-- Tree util / test cases (otherwise we have 100% coverage)
+- Python tree util / test cases (otherwise we have 100% coverage)

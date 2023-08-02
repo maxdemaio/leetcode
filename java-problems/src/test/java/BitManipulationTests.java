@@ -1,7 +1,6 @@
 import static org.junit.jupiter.api.Assertions.*;
 
 import bitManipulation.SumOfTwoIntegers;
-import linkedList.RemoveNthNodeFromEndOfList;
 import org.junit.jupiter.api.Test;
 
 public class BitManipulationTests {
