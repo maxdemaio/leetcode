@@ -4,3 +4,4 @@
 .idea/
 python-problems/venv/
 python-problems/lib/
+python-problems/.coverage
