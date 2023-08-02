@@ -22,7 +22,8 @@ jobs:
       - name: Setup Java
         uses: actions/setup-java@v2
         with:
-          java-version: '17'
+          java-version: '17'  # Specify Java 17 as the desired version
+          distribution: 'adopt'  # Specify the distribution, such as 'adopt', 'adopt-hotspot', etc.
 
       # Setup Python 3.11
       - name: Setup Python
