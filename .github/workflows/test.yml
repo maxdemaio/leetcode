@@ -1,0 +1,54 @@
+name: Test Project
+
+on:
+  push:
+    branches:
+      - main  # Replace 'main' with the default branch name if different
+  pull_request:
+    branches:
+      - main  # Replace 'main' with the default branch name if different
+
+jobs:
+  test:
+    name: Test Java and Python projects
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Setup Java 17
+      - name: Setup Java
+        uses: actions/setup-java@v2
+        with:
+          java-version: '17'
+
+      # Setup Python 3.11
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.11'
+
+      # Install Maven
+      - name: Install Maven
+        run: sudo apt-get install -y maven
+
+      # Install pytest
+      - name: Install pytest
+        run: python3 -m pip install pytest
+
+      # Build and test Java project
+      - name: Build and test Java
+        working-directory: java-problems
+        run: mvn clean install
+
+      # Move back to the root directory
+      - name: Move back to root directory
+        run: cd ..
+
+      # Test Python project
+      - name: Test Python
+        working-directory: python-problems
+        run: python3 -m pytest
+
