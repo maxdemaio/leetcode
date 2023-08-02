@@ -41,3 +41,4 @@
 ## Todo
 
 - Python tree util / test cases (otherwise we have 100% coverage)
+- Rm Jenkins and then add GitHub action instead to run Java/Python tests
