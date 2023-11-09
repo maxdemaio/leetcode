@@ -1,3 +1,16 @@
+"""
+Approach:
+We know the point values on contiguous characters 
+via the sum of n natural numbers. 
+So we will find out the total by summing each 
+sum of contiguous characters.
+
+Time complexity:
+O(n)
+
+Space complexity:
+O(1)
+"""
 class Solution:
     def countHomogenous(self, s: str) -> int:
         count = 0

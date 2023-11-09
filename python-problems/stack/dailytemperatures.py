@@ -1,3 +1,5 @@
+from typing import List
+
 class Solution:
     # note: monotonic increasing stack
     # https://leetcode.com/problems/daily-temperatures/solutions/3885602/python-easy-solution-100-beats-98/
