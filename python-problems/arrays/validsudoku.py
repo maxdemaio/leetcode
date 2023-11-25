@@ -2,8 +2,15 @@ from typing import List
 
 """
 Approach/Notes:
+Check comments
+
 Time complexity:
+O(n) with respect to how many cells are in the board
+because we iterate over every cell but we also fail early!
+
 Space complexity:
+Since this grid is 9x9, it is fixed
+but those data structures would scale linearly w/ the size of the grid
 """
 
 class Solution:

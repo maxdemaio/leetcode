@@ -1,5 +1,10 @@
 from typing import List
 
+"""
+Approach/Notes:
+Time complexity:
+Space complexity:
+"""
 class Solution:
     # naive approach
     def twoSum1(self, numbers: List[int], target: int) -> List[int]:
