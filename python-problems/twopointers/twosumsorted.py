@@ -2,8 +2,19 @@ from typing import List
 
 """
 Approach/Notes:
-Time complexity:
-Space complexity:
+
+Two pointers, one at beg, one at end
+[1,3,4,5,7,10,11]
+
+Time complexity: 
+naive: O(n^2)
+
+O(n)
+https://www.youtube.com/watch?v=cQ1Oz4ckceM
+because we're gradually shifting our window and ruling out lower/upper vals
+
+
+Space complexity: O(1)
 """
 class Solution:
     # naive approach
