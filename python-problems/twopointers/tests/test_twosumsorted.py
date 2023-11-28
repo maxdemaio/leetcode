@@ -2,7 +2,7 @@ from twopointers.twosumsorted import Solution
 
 
 def test_twoSum():
-    solution = Solution()
+    solution = Solution(),
 
     # input = [2, 7, 11, 15]
     # target = 9
