@@ -1,4 +1,4 @@
-# python-problems
+# python_problems
 
 :octocat:
 
@@ -7,7 +7,7 @@ Keep in mind, I wrote all these in Python version `3.9.6`.
 ## Folder structure
 
 ```
-python-problems/
+python_problems/
 ├── category1/
 │   ├── problem1.py
 │   ├── problem2.py
