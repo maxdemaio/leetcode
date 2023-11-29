@@ -6,14 +6,14 @@ on:
       - main  # Replace 'main' with the default branch name if different
     paths:
       - 'java-problems/**'  # Watch for changes in the java-problems directory
-      - 'python-problems/**'  # Watch for changes in the python-problems directory
+      - 'python_problems/**'  # Watch for changes in the python-problems directory
 
   pull_request:
     branches:
       - main  # Replace 'main' with the default branch name if different
     paths:
       - 'java-problems/**'  # Watch for changes in the java-problems directory
-      - 'python-problems/**'  # Watch for changes in the python-problems directory
+      - 'python_problems/**'  # Watch for changes in the python-problems directory
 
 jobs:
   test:
