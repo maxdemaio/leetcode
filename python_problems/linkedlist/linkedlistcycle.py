@@ -5,7 +5,7 @@ from linkedlist.util import ListNode
 """
 Approach: Tortoise and hare
 Logically it's impossible for the tortoise and hare to point at the same node if moving at different speeds
-That is, if there's no loop
+That is, if there's no loop.
 
 If (hare == tortoise) we report a loop
 If we reach the end of the list, we report no loop
