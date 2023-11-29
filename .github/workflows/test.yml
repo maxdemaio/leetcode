@@ -57,6 +57,6 @@ jobs:
 
       # Test Python project
       - name: Test Python
-        working-directory: python-problems
+        working-directory: python_problems
         run: python3 -m pytest
 
