@@ -2,6 +2,6 @@
 */target/
 .DS_Store
 .idea/
-python-problems/venv/
-python-problems/lib/
-python-problems/.coverage
+python_problems/venv/
+python_problems/lib/
+python_problems/.coverage
