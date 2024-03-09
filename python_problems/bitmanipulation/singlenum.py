@@ -2,7 +2,8 @@ from typing import *
 
 """
 Approach/Notes:
-The ^ operator compares each bit and set it to 1 if only one is 1 (if they don't match),
+The ^ (Bitwise exclusive-or) 
+operator compares each bit and set it to 1 if only one is 1 (if they don't match),
 otherwise (if both are 1 or both are 0) it is set to 0:
 
 6 = 0000000000000110
