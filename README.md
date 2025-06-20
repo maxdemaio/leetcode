@@ -59,3 +59,22 @@
 ## Todo
 
 - Python tree util / test cases (otherwise we have 100% coverage)
+
+---
+
+## NeetCode 150
+
+### Arrays & Hashing
+
+| # | Done? | Problem                        | Difficulty | Last Date Solved | Language(s) |
+|---|--------|--------------------------------|------------|-----------------|-------------|
+|   |      | Contains Duplicate             | Easy       |                 |             |
+|   |      | Valid Anagram                  | Easy       |                 |             |
+|   |      | Two Sum                        | Easy       |                 |             |
+|   |      | Group Anagrams                 | Medium     |                 |             |
+|   |      | Top K Frequent Elements        | Medium     |                 |             |
+|   |      | Encode and Decode Strings      | Medium     |                 |             |
+|   |      | Product of Array Except Self   | Medium     |                 |             |
+|   |      | Valid Sudoku                   | Medium     |                 |             |
+|   |      | Longest Consecutive Sequence   | Medium     |                 |             |
+
